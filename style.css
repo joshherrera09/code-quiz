@@ -12,13 +12,10 @@ body{
 
 
 #high-scores {
-    margin-top: 18px;
+    
     background-color: white;
     color: purple;
     border: none;
-}
-
-#high-scores {
     padding: 15px 25px;
     font-size: 24px;
     text-align: center;
@@ -29,7 +26,9 @@ body{
     border: none;
     border-radius: 15px;
     box-shadow: 0 9px #999;
-  }
+}
+
+
   
   #high-scores:hover {background-color: black}
   
@@ -39,8 +38,17 @@ body{
     transform: translateY(4px);
   }
 
-  /* this will be #timer once it is set up*/
-  p {
-      padding: 37px;
-      font-size: 36px;
+  h3{
+    margin-top: 40px;
+    padding: 15px 25px;
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: purple;
+    background-color: white;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+
   }
