@@ -14,21 +14,30 @@
         <div class="container">
             
             <div class="row">
-              <div class="col-sm">
+              <div class="col-3">
                 <button type='button' id='high-scores'>View Highscores</button>
               </div>
 
-              <div class="col-sm"></div>
+              <div class="col-6"></div>
 
-              <div class="col-sm">
-                <h3 id='timer'></h3>
-                <div id="main"></div>
-                
-
+              <div class="col-3">
+                <div id='timer'>Time Left</div> 
+              </div>
             </div>
         </div>  
         
-        <div id='quiz'></div>
+        <div class='container question-container'>
+
+          <div id='question'></div>
+
+          <div id='answers'></div>
+
+          <div id='correct-answer'></div>
+
+          <div id='message'></div>
+
+
+        </div>
 
       <script src="./script.js"></script>
         
