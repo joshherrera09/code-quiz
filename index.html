@@ -1,45 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="script.js"></script>
-    <link rel="stylesheet" type="text/css" href="./style.css" />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JavaScript Quiz</title>
-  </head>
-  <body>
-   
-        <div class="container">
-            
-            <div class="row">
-              <div class="col-3">
-                <button type='button' id='high-scores'>View Highscores</button>
-              </div>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Coding Quiz</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="scores"><a href="highscores.html">View Highscores</a></div>
 
-              <div class="col-6"></div>
+  <div class="timer">Time: <span id="time">0</span></div>
 
-              <div class="col-3">
-                <div id='timer'>Time Left</div> 
-              </div>
-            </div>
-        </div>  
-        
-        <div class='container question-container'>
+  <div class="wrapper">
+    <div id="start-screen" class="start">
+      <h1>Coding Quiz Challenge</h1>
+      <p>
+        Try to answer the following code-related questions within the time
+        limit.  keep in mind that incorrect answers will penalize your score/time by ten seconds!
+      </p>
+      <button id="start">Start Quiz</button>
+    </div>
 
-          <div id='question'></div>
+    <div id="questions" class="hide">
+      <h2 id="question-title"></h2>
+      <div id="choices" class="choices"></div>
+    </div>
 
-          <div id='answers'></div>
+    <div id="end-screen" class="hide">
+      <h2>All Done!</h2>
+      <p>Yur final score is <span id="final-score"></span>.</p>
+      <p>
+        Enter initials: <input type="text" id="initials" max="3" />
+        <button is="submit">Submit</button>
+      </p>
+    </div>
 
-          <div id='correct-answer'></div>
+    <div id="feedback" class="feedback hide"></div>
+  </div>
 
-          <div id='message'></div>
-
-
-        </div>
-
-      <script src="./script.js"></script>
-        
-
-  </body>
+  <script src="./assets/js/questions.js"></script>
+  <script src="./assets/js/logic.js"></script>
+</body>
+</html>
