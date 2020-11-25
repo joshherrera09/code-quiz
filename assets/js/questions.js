@@ -1,27 +1,36 @@
+// list of all questions, choices, and answers
 var questions = [
     {
-        title: "Commonly used data types DO NOT include:",
-        choices: ["String", "Booleans", "Alerts", "Numbers"],
-        answer: "Alerts"
+      title: "Commonly used data types DO NOT include:",
+      choices: ["strings", "booleans", "alerts", "numbers"],
+      answer: "alerts"
     },
     {
-        title: "The condition in an if / else satement is enclosed within ____ .",
-        choices: ["Quotes", "Curly Brackets", "Parenthesis", "Squared Brackets"],
-        answer: "Parenthesis"
+      title: "The condition in an if / else statement is enclosed within ____.",
+      choices: ["quotes", "curly brackets", "parentheses", "square brackets"],
+      answer: "parentheses"
     },
     {
-        title: "Arrays in JavaScript can be used to store ___ .",
-        choices: ["Numbers and Srings", "Other Arrays", "Booleans", "All of the Above"],
-        answer: "All of the Above"
+      title: "Arrays in JavaScript can be used to store ____.",
+      choices: [
+        "numbers and strings",
+        "other arrays",
+        "booleans",
+        "all of the above"
+      ],
+      answer: "all of the above"
     },
     {
-        title: "String values must be enclosed within ___ when being assigned to variables",
-        choices: ["Commas", "Curly Brackets", "Quotes", "Parenthesis"],
-        answer: "Quotes"
+      title:
+        "String values must be enclosed within ____ when being assigned to variables.",
+      choices: ["commas", "curly brackets", "quotes", "parentheses"],
+      answer: "quotes"
     },
     {
-        title: "A very useful tool used during development and debugging for printing content to the debugger is:",
-        choices: ["JavaScript", "Terminal / Bash", "For Loops", "console.log"],
-        answer: "console.log"
-    },
-];
+      title:
+        "A very useful tool used during development and debugging for printing content to the debugger is:",
+      choices: ["JavaScript", "terminal / bash", "for loops", "console.log"],
+      answer: "console.log"
+    }
+  ];
+  
